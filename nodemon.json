@@ -1,0 +1,8 @@
+{
+  "env": {
+    "DB_USER": "dbUser",
+    "DB_PASSWORD": "dbPassword",
+    "DB_NAME": "merncourse",
+    "JWT_KEY": "supersecret"
+  }
+}

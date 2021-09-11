@@ -8,8 +8,7 @@ const userRoutes = require('./routes/users-routes')
 
 const app = express()
 
-const uri =
-  'mongodb+srv://dbUser:dbPassword@cluster0.n3vpc.mongodb.net/merncourse?retryWrites=true&w=majority'
+const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.n3vpc.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`
 
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
